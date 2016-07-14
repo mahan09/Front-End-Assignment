@@ -1,0 +1,205 @@
+ {
+    "products": [
+                    {
+                    "id":"1",
+                    "name":"Jack and Jones",
+                    "indexname":"Firetrap",
+                    "url": "json_img/clothe1.jpg",
+                    "ImgPath": "json_img/pic1.jpg",
+                    "category":"T-shirt",
+                    "Price":"£45.00",
+                    "Size":"Medium",
+                    "Colour":"Black & White",
+                    "lat": 53.646029,
+                    "lng": -1.779968,
+                    "link": "view.html"
+                 
+                    },
+                    
+                    
+                    {
+                    "id":"2",
+                    "name":"G-star",
+                    "indexname":"Adidas",
+                    "url": "json_img/clotheeee.jpg",
+                    "ImgPath": "json_img/pic3.jpg",
+                    "category":"Shirt",
+                    "Price":"£65.00",
+                    "Size":"Large",
+                    "Colour":"Purple",
+                    "lat": 53.646284,
+                    "lng": -1.781434,
+                    "link": "view.html"
+                    
+                    },
+                    
+                  
+                    {
+                    "id":"3",
+                    "name":"Diesel",
+                    "indexname":"Henleys",
+                    "url": "json_img/clothes.jpg",
+                    "ImgPath": "json_img/pic15.jpg",
+                    "category":"Jumper",
+                    "Price":"£80.00",
+                    "Size":"Large",
+                    "Colour":"Cream",
+                    "lat": 53.640434,
+                    "lng": -1.797482,
+                    "link": "view.html"
+                   
+                    },
+                    
+                  
+                    {
+                    "id":"4",
+                    "name":"Armani",
+                    "indexname":"Lacost",
+                    "url": "json_img/dsc_0031_5_5.jpg",
+                    "ImgPath": "json_img/pic8.jpg",
+                    "category":"Jacket",
+                    "Price":"£92.00",
+                    "Size":"Small",
+                    "Colour":"Black",
+                    "lat": 53.644037,
+                    "lng": -1.781551,
+                    "link": "view.html"
+                   
+                    },
+                    
+                    
+                    {
+                    "id":"5",
+                    "name":"Lacost",
+                    "indexname":"Duck & Cover",
+                    "url": "json_img/download.jpeg",
+                    "ImgPath": "json_img/pic19.jpg",
+                    "category":"Joggers",
+                    "Price":"£110.00",
+                    "Size":"Medium",
+                    "Colour":"Black",
+                    "lat": 53.647168,
+                    "lng": -1.783184,
+                    "link": "view.html"
+                    
+                    },
+                    
+                  
+                    {
+                    "id":"6",
+                    "name":"Adidas",
+                    "indexname":"Police 883",
+                    "url": "json_img/henleys.jpg",
+                    "ImgPath": "json_img/pic12.jpg",
+                    "category":"Coat",
+                    "Price":"£55.00",
+                    "Size":"Small",
+                    "Colour":"Brown",
+                    "lat": 53.651078,
+                    "lng": -1.783558,
+                    "link": "view.html"
+                    
+                    },
+                    
+                  
+                    {
+                    "id":"7",
+                    "name":"Calvin Klein",
+                    "indexname":"Jack & Jones",
+                    "url": "json_img/g-starrrrr.png",
+                    "ImgPath": "json_img/pic9.jpg",
+                    "category":"Jacket",
+                    "Price":"£58.00",
+                    "Size":"Medium",
+                    "Colour":"Silver",
+                    "lat": 53.646029,
+                    "lng": -1.779968,
+                    "link": "view.html"
+                   
+                    },
+                    
+                  
+                    {
+                    "id":"8",
+                    "name":"Boss",
+                    "indexname":"Firetrap",
+                    "url": "json_img/red.png",
+                    "ImgPath": "json_img/pic4.jpg",
+                    "category":"Shirt",
+                    "Price":"£60.00",
+                    "Size":"Small",
+                    "Colour":"Navy",
+                    "lat": 53.646029,
+                    "lng": -1.779968,
+                    "link": "view.html"
+                   
+                    },
+                    
+                  
+                    {
+                    "id":"9",
+                    "name":"Duck & Cover",
+                    "indexname":"Lewis",
+                    "url": "json_img/nike.png",
+                    "ImgPath": "json_img/pic20.jpg",
+                    "category":"Coat",
+                    "Price":"£45.00",
+                    "Size":"Large",
+                    "Colour":"Navy",
+                    "lat": 53.646029,
+                    "lng": -1.779968,
+                    "link": "view.html"
+                    },
+                  
+                  
+                    {
+                    "id":"10",
+                    "name":"Police 883",
+                    "indexname":"Top Man",
+                    "url": "json_img/DKNY.jpg",
+                    "ImgPath": "json_img/pic10.jpg",
+                    "category":"Jacket",
+                    "Price":"£50.00",
+                    "Size":"Large",
+                    "Colour":"White & Black",
+                    "lat": 53.647168,
+                    "lng": -1.783184,
+                    "link": "view.html"
+                    },
+                    
+                  
+                    {
+                    "id":"11",
+                    "name":"H & M",
+                    "indexname":"Calvin Klein",
+                    "url": "json_img/adidas.jpg",
+                    "ImgPath": "json_img/jean2.jpeg",
+                    "category":"Jeans",
+                    "Price":"£80.00",
+                    "Size":"Large",
+                    "Colour":"Dark Blue",
+                    "lat": 53.640434,
+                    "lng": -1.797482,
+                    "link": "view.html"
+                  
+                    },
+    
+    
+                    {
+                    "id":"12",
+                    "name":"Firetrap",
+                    "indexname":"Lacoste",
+                    "url": "json_img/adidas1.jpg",
+                    "ImgPath": "json_img/jean1.jpg",
+                    "category":"Jeans",
+                    "Price":"£60.00",
+                    "Size":"large",
+                    "Colour":"Light Blue",
+                    "lat": 53.647168,
+                    "lng": -1.783184,
+                    "link": "view.html"
+                    
+                    }
+                ]
+ }
+

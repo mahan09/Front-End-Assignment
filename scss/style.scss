@@ -1,0 +1,512 @@
+/* SCSS */
+
+
+  // Google font using CSS import method and also imported the CSS styling from the reset CSS file which gets rid of the unwanted styling on the HTML 5 page.
+@import 'reset';
+@import url(https://fonts.googleapis.com/css?family=Cinzel:700);
+
+
+  // SCSS variables which i have created for my CSS.
+  $bg-color:white;
+  $text-color: #444;
+  $textbox-color:grey;
+  $body-font-weight:normal;
+  $box-radius-border: 5px;
+  $hd-ft-color: #888888;
+  $font: 'Cinzel', serif;
+  $head-foot-bg: #101010;
+  $media-head-size: 35px;
+  $media-body-size: 14px;
+  $textbox-border: 1px solid $text-color;
+  $display-inline: block;
+  $web-text-align: centre;
+  $mytext: none;
+  $main-body-text: 20px;
+
+
+  // Created a mix method in order to create a style for border raduis which can be applied to other stylings if needed.
+@mixin box-border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+
+  // div element for displayint the json file.
+#results{
+  margin-top: 5px;
+}
+
+  // Created a style for the webpage button which is displayed on the index and contact us page and also used the SCSS variable to change the font style.
+.button-styling{
+	font-size: 90%;
+	text-transform: uppercase;
+	padding: 2% 30px;
+	margin: 20px auto;
+	color:white;
+	background:grey;
+	border: 0 none;
+	text-decoration: none;
+	border-radius: 7px;
+	cursor: pointer;
+	-webkit-transition: all 150ms ease;
+	transition: all 150ms ease;
+	font-family: $font;
+}
+
+  
+// Styled the HTML and body margin, height and padding and also used the SCSS variable to change the background colour.
+html, body{
+  background: $bg-color;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+// Style for the search page text box and i have used the include method within the SCSS in order to apply the same styling which i have create by using Mixins and also used variables for the border and colour.
+.textbox{ 
+    border: $textbox-border; 
+	@include box-border-radius(5px);
+	color: $textbox-color;
+    outline:0; 
+    height:25px; 
+    width: 180px; 
+    padding-left:5px; 
+   
+  }
+  
+  
+//  Applied variables such as font colour, font weright and font familly to each heading.
+h1, h2, h3, h5, h6 {
+  color:$text-color;
+  font-weight: $body-font-weight;
+  font-family: $font;
+     
+}
+
+// Applied variables to the footer in order to change the color, background and font familly.
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 60px;
+	width: 100%;
+	color: $hd-ft-color;
+	background: $head-foot-bg;
+	font-size:1.0em;
+	text-align: center;
+	padding-top: 20px;
+	font-family: $font;
+}
+
+
+// Applied variable to the font colour.
+
+h2 {
+  
+  font-size:7.0em;
+  color: $hd-ft-color ;
+  padding-top:30px;
+  text-align: center;
+} 
+
+ 
+ 
+h1{
+  text-align: center;
+  font-size: 90px;
+  text-shadow: 2px 2px 5px rgba(110, 110, 110, 1);
+}
+
+
+
+// Applied variable to the margin top of this following style in order to style the margin top distance from the text itself.
+h3{
+
+  margin-top: $main-body-text;
+  font-size: 35px;
+}
+ 
+ 
+// Applied the include method by aviod writting the same stylinh which i have created in the mixin.
+hr{ 
+  height: 30px; 
+  border-style: $textbox-border; 
+  border-color: $textbox-color; 
+  border-width: 1px 0 0 0; 
+  @include box-border-radius(5px);
+}
+
+// Same thing in here again.
+hr:before { 
+  display: $display-inline; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: $textbox-color; 	 	
+  border-width: 0 0 1px 0; 
+  @include box-border-radius(10px);
+}
+
+
+// Used a variable to style the text decoration within this style.
+h3 {font-size:1.6em;}  
+h5 {font-size:1em;}  
+h6 {font-size:0.9em;}    
+a, a:link, a:hover{
+  text-decoration:$mytext;
+  color:#444;
+	}
+	
+    
+    
+// Used the extend method to style the other button on the webpage by aviod replication writting the same code for the CSS.
+.button
+{
+
+	@extend .button-styling;
+}
+
+
+.product-button1 {
+  text-align: center;
+  margin-top: 10px;
+
+}
+
+
+ // the following styles are for the images which are displayed on the webpage.
+
+#responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+// Applied a variable to change the font familly.
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: black;
+  font-family: $font;
+  
+  }
+
+
+div.img:hover {
+   opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+	color: black;
+	font-family: 'Cinzel', serif;
+
+}
+
+
+// Styling for the contact us form which is implemented on one of the HTML pages.
+
+#contact {
+  margin:30px 0;
+}
+
+
+#contact h3 {
+  color:$text-color;
+  font-weight: $body-font-weight;
+  font-family: $font;
+  font-size: 30px;
+  text-shadow: 2px 2px 2px #aaa;
+}
+
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact textarea {
+	width:100%;
+	@include box-border-radius(5px);
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+
+}
+
+#contact button[type="submit"] {
+		@extend .button-styling;
+}
+
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border-color: 	#C0C0C0  ;
+}
+
+
+// Webpage navigation bar by using different kind of styling such as variables.
+
+nav {
+  display:$display-inline;
+  width:100%;
+  line-height:3.0em;
+  height: auto;
+  background:$head-foot-bg;
+  font-family: $font;
+  font-size: 13px;
+  
+  
+}
+
+.top-nav ul {padding:0;}
+.top-nav ul ul {
+  position:absolute;
+  background:#262626;
+}
+
+.top-nav
+li {
+  float:left;
+  list-style:none outside none;
+  cursor:pointer;
+}
+
+
+.nav-text {display:none;}
+
+.right {
+  float:centre;
+  margin-left:0px;
+	  }
+      
+    
+.top-nav li a {background:none repeat scroll 0 0 #4a4a4a;}
+.top-nav > ul {
+  height:0;
+  max-width:100%;
+  overflow:hidden;
+  position:relative;
+  z-index:999;
+  color: red;
+}
+.top-nav > ul.show-menu {height:auto;}
+.top-nav ul ul {
+  left:0;
+  margin-top:0;
+  position:relative;
+  right:0;
+} 
+.top-nav li ul li a {min-width:100%;}
+.top-nav li {
+  float:none;
+  list-style:none outside none;
+  padding:0;
+
+}
+.top-nav li a {
+  border-top:1px solid #333;
+  color:$bg-color;
+  display: $display-inline;
+  padding:0.5em;
+  text-decoration:$mytext;
+}
+
+
+// The following styling will generate a toggle class for the navigation bar in order for users to navigate within the webpage.
+#toggle {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 30px auto 10px;
+}
+
+#toggle span:after,
+#toggle span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -9px;
+}
+#toggle span:after{
+  top: 9px;
+}
+#toggle span {
+  position: relative;
+  display: block;
+}
+
+  #toggle span,
+  #toggle span:after,
+  #toggle span:before {
+  width: 100%;
+  height: 3px;
+  background-color: #888;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+
+
+/* on activation */
+
+
+// The media screen which has been designed for each element of HTML page in order to display the content effectively for the mobile format.
+
+// Variables has also been used within this section to avoid code replicaitons.
+
+
+@media screen and (max-width: 480px) {
+  #map {
+  width: 100%;
+  height: 470px;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .right {
+  float:none;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+    h2, h1{
+        font-size:$media-head-size;
+		
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    h3{
+        font-size: $media-body-size;
+		text-align: centre;
+		margin-left: 9%;
+        font-size: 90%;
+		
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h4{
+        
+		
+		margin-left: 40%;
+        color: $textbox-color;
+        font-size: 90%;
+        float: left;
+		
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h6{
+        
+		
+		margin-left: 10%;
+        color: $textbox-color;
+        font-size: 90%;
+        float: left;
+		
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    footer{
+        font-size:75%;
+		
+    }
+}
+	
+	@media only screen and (max-width: 700px){
+    #responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+
+	@media only screen and (max-width: 768px){
+    .textbox {
+        margin-left: 25%;
+        font-size: 80%;
+        padding-left: 10%;
+        
+    }
+}
+
+
+	@media only screen and (max-width: 768px){
+    #Display-No{
+       
+        color:$text-color;
+        margin-left: 35%;
+        font-family: $font;
+        margin-top: 1%;
+        
+    }
+}
+
+
+
+	@media only screen and (max-width: 768px){
+    #mode{
+       border: $textbox-border;
+       @include box-border-radius(5px);
+        
+      
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+    #responsive {
+        width: 100%;
+    }
+}
+
+// End of SCSS file

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+		 <!--The codes below illustres where i have placed all my CSS and JS files within the heading tag in order for the webpage to function properly-->
+<html lang="en">
+		 
+		 <!--Head opening tag-->
+		 <head>
+			<meta charset="UTF-8">
+				  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+						<title>Style Studio</title>
+							  <link rel="stylesheet" href="css/bootstrap.css">
+									<link rel="stylesheet" href="css/bootstrap.min.css">
+										  <link rel="stylesheet" href="css/style.css">
+											 <link rel="stylesheet" href="css/normalize.css">
+											 <script src="https://maps.googleapis.com/maps/api/js?libraries=geometry"></script>
+									<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+						   <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+					 <script type="text/javascript" src="js/App.min.js"></script>
+			<script type="text/javascript" src="js/modernizr.min.js"></script>
+	  </head>
+		 <!--Head closing tag-->
+		 
+				  <!--body opening tag-->
+				  <body>
+						   <!--Div element in order to apply jquery page fading affect to the HTML page-->
+						   <div id="your-page" style="display:none;">
+									
+									<!--Header opening tag-->
+								    <header>
+										     <nav>
+										     <div class="logo">
+											 <h2>STYLE STUDIO</h2>
+											 </div>
+												 
+												 <!--Website Navigation-->
+													  <div class="top-nav">
+															   <p class="nav-text" id="toggle"><span></span></p>
+															   <ul class="right">
+															   <li class="active"><a href="search.html">Search Items</a></li>
+															   <li><a href="contact.html">Contact Us</a></li>
+															   </ul>
+													  </div>
+										     </nav>
+									</header>
+									<!--Header closing tag-->
+									
+									<!--Page container opening tag-->
+									<div class="container">
+											 
+									<!--Div element to display the details and distances of each json file on the HTML page-->		 
+									<div id="details"></div>
+									<div id="distance"></div>
+									
+									<!--Dropdown box in order to allow users to view directions for each travel mode when they view a product-->
+									<h5><li><b>Mode of Travel: </b></li></h5>
+											 <select id="mode">
+											   <option value="DRIVING">Driving</option>
+											   <option value="WALKING">Walking</option>
+											   <option value="BICYCLING">Bicycling</option>
+											   <option value="TRANSIT">Transit</option>
+											 </select>
+											 
+									<!--Div element to display the map on the webpage-->		 
+									<div id="map"></div>
+									</div>
+									
+											 <br>
+											 <br>
+											 <br>
+											 
+									<!--footer-->
+									<footer><p>Developed By Mahan Zeraat-Talab &copy; 2016</p></footer>
+				  </body>
+				  <!--Body closing tag-->
+</html>
